@@ -3,6 +3,10 @@ A small full stack application for a credit card provider. It allows to add new 
 
 
 ## Creditcard-server is the backend(NodeJs)
+In the project directory, you can run:
+```
+npm install
+```
 To run the server use
 ```
 node server.js
