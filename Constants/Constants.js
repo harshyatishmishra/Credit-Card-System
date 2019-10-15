@@ -1,4 +1,4 @@
 module.exports = Object.freeze({
-    FILE_PATH: './storage/file.json',
+    FILE_PATH: './Storage/file.json',
     ENCODING: 'utf8'
 });

@@ -36,11 +36,11 @@ function writeDetails(data, callback) {
     } else {
         var jsonData = JSON.parse("[]");
         jsonData.push(inputData);
-        data = JSON.stringify(jsonData); console.log("1");
+        data = JSON.stringify(jsonData);
         writeFileWithData(data, function (d) {
             callback(d);
         });
-        console.log("2");
+
     }
     console.log('Executed after file write');
 }
@@ -49,7 +49,7 @@ function writeFileWithData(inputData, callback) {
 
     fs.writeFile(constants.FILE_PATH, inputData, constants.ENCODING, (error) => {
         if (error) {
-            console.log("3");
+
             callback({
                 status: 500,
                 msg: 'Unable to process the request at the moment. Please try again later.',
@@ -57,7 +57,7 @@ function writeFileWithData(inputData, callback) {
             });
             return;
         }
-        console.log("4");
+
         callback({
             status: 201,
             msg: 'Record created successfully.',
