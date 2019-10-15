@@ -12,7 +12,6 @@ module.exports.addDetails = function (data, callback) {
     }
 
     writefile.writeDetails(data, function (d) {
-        console.log('\n', 'WriteDetails CALLBACK CALLED', '\n');
         callback(d);
     });
 }
