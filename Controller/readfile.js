@@ -19,6 +19,8 @@ function getAllDetails(callback) {
         });
 
         console.log('Executed after file read');
+    } else {
+        console.log('File not found');
     }
 }
 
