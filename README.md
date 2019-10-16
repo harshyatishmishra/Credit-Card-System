@@ -12,6 +12,12 @@ To run the server use
 node server.js
 ```
 from the directory.
+
+To run the test cases
+```
+npm test
+```
+
 Run the server api in Postman. using http://localhost:3000 url
 
 #### Two Rest Api
